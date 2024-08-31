@@ -1,0 +1,32 @@
+sample_dict= {"name": "Daniyal","age": 11, "country": "england"} 
+print(sample_dict) 
+print(sample_dict["name"],"\n") 
+print(sample_dict["age"],"\n") 
+# method-1
+# Get the list of keys only 
+print(sample_dict.keys(),"\n")
+
+# get the list of values only 
+print(sample_dict.values(),"\n")
+
+# get the list of key-value pair only 
+print(sample_dict.items(),"\n") 
+
+#method-2
+# Get the keys only using for loop
+for k in sample_dict.keys():
+    print(k)
+print()  
+
+# get the values olny using for loop
+for v in sample_dict.values():
+    print(v) 
+print() 
+
+# Add a key-value pair to thhe dictionary
+sample_dict["profession"]= "cristiano ronaldo " 
+print(sample_dict,"\n") 
+
+# Delete a key-value pair 
+del(sample_dict["profession"]) 
+print(sample_dict,"\n")  
