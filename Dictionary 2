@@ -1,0 +1,55 @@
+sample_dict= {"name": "Daniyal","age": 11, "country": "england"} 
+print(sample_dict) 
+print(sample_dict["name"],"\n") 
+print(sample_dict["age"],"\n") 
+# method-1
+# Get the list of keys only 
+print(sample_dict.keys(),"\n")
+
+# get the list of values only 
+print(sample_dict.values(),"\n")
+
+# get the list of key-value pair only 
+print(sample_dict.items(),"\n") 
+
+#method-2
+# Get the keys only using for loop
+for k in sample_dict.keys():
+    print(k)
+print()  
+
+# get the values olny using for loop
+for v in sample_dict.values():
+    print(v) 
+print() 
+
+# Add a key-value pair to thhe dictionary
+sample_dict["profession"]= "cristiano ronaldo " 
+print(sample_dict,"\n") 
+
+# Delete a key-value pair 
+del(sample_dict["profession"]) 
+print(sample_dict,"\n")  
+# ===========================
+# store a list as a value in the dictionary 
+sample_dict["marks"] = [99,87,85,92,90] 
+print(sample_dict,"\n") 
+
+# Access a value in thelist stored in the dictionary
+print(sample_dict["marks"][3]) 
+
+# Access a value in thelist stored in the dictionary
+print(sample_dict["marks"][1]) 
+
+# Create a nested dictionary
+classroom = {"Daniyal":{"age":11,"marks":[99,87,85,92,90]},
+             "Anagan":{"age":13,"marks":[78,54,23,90,39]},
+             "Angelo":{"age":12,"marks":[22,45,67,89,18]}} 
+print("\n",classroom) 
+
+# Get the age of Angelo 
+print() 
+print(classroom["Angelo"]["age"]) 
+
+# access 67 
+print(classroom["Angelo"]["marks"][2]) 
